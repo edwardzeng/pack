@@ -539,7 +539,10 @@ for
 \begin_inset Formula $F[i,v-C_{i}]$
 \end_inset
 
-推导得到，与本题意不符。
+推导得到，与本题意不符。换句话说，如果三顺序，会导致
+\begin_inset Formula $F[i-1,v-C_{i}]$
+\end_inset
+被覆盖，计算F[v]时使用的是当前被覆盖后的F[v-Ci], 而不是i - 1状态时的值，逆序计算则不存在这种情况，可以使用一个二维表表示
 \end_layout
 
 \begin_layout Standard
